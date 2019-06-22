@@ -110,7 +110,7 @@ console.log("Page is working");
 //4.  Commit.
 
 
-// const animal = 'horse';
+// const animal = 'cow';
 
 // 	if (animal === 'cow') {
 // 		console.log('mooooo');
@@ -126,17 +126,63 @@ console.log("Page is working");
 //if the age is 16 years or older, or, if the age is younger
 //than 16, a message should print "Sorry, you're too young."
 
-function ageOfPerson(age) {
-	if (age >= 16){
-		return "Here are the keys!";
-	} else {
-		return "Sorry, you're too young."
-	}
-	return age;
-}
+// function ageOfPerson(age) {
+// 	if (age >= 16){
+// 		return "Here are the keys!";
+// 	} else {
+// 		return "Sorry, you're too young."
+// 	}
+// 	return age;
+// }
 
-console.log(ageOfPerson(15));
-console.log(ageOfPerson(18));
+// console.log(ageOfPerson(15));
+// console.log(ageOfPerson(18));
+
+
+
+//II. LOOPS
+
+//A. THE BASICS
+//1. Write a loop that will print out all the numbers from 0 
+//to 10, inclusive.
+
+// for (i = 0; i <=10; i++) {
+// 	console.log(i);
+// }
+
+//2. Write a loop that will print out all the numbers from 10
+// up to and including 400.
+
+// for (i = 10; i <= 400; i++) {
+// 	console.log(i);
+// }
+
+//3. Write a loop that will print out every third number 
+//starting with 11 and going no higher than 4000.
+
+// for (i = 11; i <= 4000; i += 3) {
+// 	console.log(i);	
+// 	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

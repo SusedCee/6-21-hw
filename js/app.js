@@ -75,43 +75,48 @@ console.log("Page is working");
 //ex: Hello, my name is Jean Valjean
 
 
-//BOOLEANS
+//C.BOOLEANS
 //Using the provided variable definitions, replace the blanks so that
 // all log statements print true in the console. Answers should be all
 // be valid JS syntax and not weird things that don't make sense but
 // happen to print true to the console.
 
-const a = 4;
-const b = 53;
-const c = 57;
-const d = 16;
-const e = 'Kevin';
+// const a = 4;
+// const b = 53;
+// const c = 57;
+// const d = 16;
+// const e = 'Kevin';
 
-console.log(a < b);
-console.log(c > d);
-console.log('Name' === 'Name');
-// FOR THE NEXT TWO, USE ONLY && OR ||
-console.log(true || false);
-console.log(false && false && false && false && false || true);
-console.log(false === false); // &&, || with this one will always be false!
-console.log(e && 'Kevin');
-console.log(a && b && c); // note: a < b < c is NOT CORRECT (and is not a valid JS expression)
-console.log(a || a && d); // note: the answer is a simple arithmetic equation, not something "weird"
-console.log(48 || '48');
-
-
+// console.log(a < b);
+// console.log(c > d);
+// console.log('Name' === 'Name');
+// // FOR THE NEXT TWO, USE ONLY && OR ||
+// console.log(true || false);
+// console.log(false && false && false && false && false || true);
+// console.log(false === false); // &&, || with this one will always be false!
+// console.log(e && 'Kevin');
+// console.log(a && b && c); // note: a < b < c is NOT CORRECT (and is not a valid JS expression)
+// console.log(a || a && d); // note: the answer is a simple arithmetic equation, not something "weird"
+// console.log(48 || '48');
 
 
+//D. THE FARM
+//1.  Declare a variable animal. Set it to be either "cow" or 
+//something else.
+//2.  Write code that will print out "mooooo" if the it is equal
+// to cow.
+//3.  Change your code so that if the variable animal is anything
+// other than a cow, it will print "Hey! You're not a cow."
+//4.  Commit.
 
 
+// const animal = 'horse';
 
-
-
-
-
-
-
-
+// 	if (animal === 'cow') {
+// 		console.log('mooooo');
+// 	} else {
+// 		console.log("Hey! You're not a cow.")	
+// 	}
 
 
 

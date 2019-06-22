@@ -119,6 +119,46 @@ console.log("Page is working");
 // 	}
 
 
+//E. DRIVER'S ED
+//1. Make a variable that holds a person's age. Be semantic.
+
+//2. Write code that will print out "Here are the keys!", 
+//if the age is 16 years or older, or, if the age is younger
+//than 16, a message should print "Sorry, you're too young."
+
+function ageOfPerson(age) {
+	if (age >= 16){
+		return "Here are the keys!";
+	} else {
+		return "Sorry, you're too young."
+	}
+	return age;
+}
+
+console.log(ageOfPerson(15));
+console.log(ageOfPerson(18));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

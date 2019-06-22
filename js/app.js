@@ -46,10 +46,33 @@ console.log("Page is working");
 //, but when staring off everything might take a really long time.
 
 
+//B. STRINGS
+//1.Create a variable called firstVariable.
+// -Assign it the value of the string "Hello World"
+// -Change the value of this variable to some number.
+// -Store the value of firstVariable in a new variable called secondVariable
+// -Change the value of secondVariable to any string.
+// -What is the value of firstVariable?
+
+// let firstVariable = 'Hello World'; //using let that way i can change the value
+// let secondVariable = ("");
+// firstVariable = 23;
+// firstVarable = secondVariable;
+// secondVariable = "Hello Universe";
 
 
+// console.log(firstVariable);
+
+//2. Create a variable called yourName and set it equal to your 
+//name as a string. Then, write an expression that takes the string
+// "Hello, my name is " and the variable yourName so that it 
+//returns a new string with them concatenated.
+
+// const yourName = 'Sused Cabrera';
+// console.log("Hello, my name is " + yourName);
 
 
+//ex: Hello, my name is Jean Valjean
 
 
 

@@ -356,33 +356,116 @@ console.log("Page is working");
 //G. MONKEY IN THE MIDDLE
 
 //1. console.log() little number if the number entered is less than 5.
-const age = 8; {
+// const age = 8; {
 
-//2. If the number entered is more than 10, log big number.
-	if (age > 10) {
-		console.log("Big number");
+// //2. If the number entered is more than 10, log big number.
+// 	if (age > 10) {
+// 		console.log("Big number");
 
-//3. Otherwise, log "monkey". 
-	} else {
-		console.log("monkey");
-	} 
+// //3. Otherwise, log "monkey". 
+// 	} else {
+// 		console.log("monkey");
+// 	} 
+// }
+
+
+//H. WHAT'S IN YOUR CLOSET?
+
+//Below, we've given you examples of Kristyn and Thom's 
+//closets modeled as data in JavaScript.
+
+const kristynsCloset = [
+  "left shoe",
+  "cowboy boots",
+  "right sock",
+  "GA hoodie",
+  "green pants",
+  "yellow knit hat",
+  "marshmallow peeps"
+];
+
+// Thom's closet is more complicated. Check out this 
+//nested data structure!!
+const thomsCloset = [
+  [
+    // These are Thom's shirts
+    "grey button-up",
+    "dark grey button-up",
+    "light blue button-up",
+    "blue button-up",
+  ],[
+    // These are Thom's pants
+    "grey jeans",
+    "jeans",
+    "PJs"
+  ],[
+    // Thom's accessories
+    "wool mittens",
+    "wool scarf",
+    "raybans"
+  ]
+];
+
+
+//1.  What's Kristyn wearing today? Using bracket notation
+// to access items in kristynsCloset, log the sentence "Kristyn
+// is rocking that " + the third item in Kristyn's closet + " today!" 
+//to the console.
+
+
+//2.  Kristyn just bought some sweet shades! Add "raybans" to her 
+//closet after "yellow knit hat".
+
+
+//3.  Kristyn spilled coffee on her hat... modify this item to read
+// "stained knit hat" instead of yellow.
+
+
+//4.  Put together an outfit for Thom! Using bracket notation, access
+// the first element in Thom's shirts array.
+
+
+//5.  In the same way, access one item from Thom's pants array.
+
+
+//6.  Access one item from Thom's accessories array.
+
+
+//7.  Log a sentence about what Thom's wearing. Example: "Thom is 
+//looking fierce in a grey button-up, jeans and wool scarf!"
+
+
+//8.  Get more specific about what kind of PJs Thom's wearing this 
+//winter. Modify the name of his PJ pants to Footie Pajamas.
+
+
+
+// IV. FUNCTIONS
+
+
+//A. printGreeting
+
+//Done already
+
+
+//B. Write a function printCool that accepts one parameter, name as
+// an argument. The function should print the name and a message 
+//saying that that person is cool.
+
+// const printCool = (name) => {
+// 	console.log(name + " is cool");
+// }
+// console.log(printCool("Captain Reynolds")); //=> "Captain Reynolds is cool";
+
+//C. calculateCube
+
+// Write a function calculateCube that takes a single number and 
+// prints the volume of a cube made from that number.
+
+const calculateCube = (number) => {
+	console.log(Math.pow(number, 3));
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+console.log(calculateCube(5));
 
 
 

@@ -274,9 +274,20 @@ console.log("Page is working");
 const quotes = ["Be yourself, everyone else is already taken.", "So many books, so little time.", "Be the change that you wishto see in the world."];
 
 console.log(quotes);
+console.log(quotes[0]);
 
 
+//C. ACCESSING ELEMENTS
+const randomThings = [1, 10, "Hello", true];
 
+//1. How do you access the 1st element in the array?
+console.log(randomThings[0]);
+
+//2. Change the value of "Hello" to "World".
+randomThings[2] = "World";
+console.log(randomThings);
+
+//3. Check the value of the array to make sure it updated the array. How? Why, yes! console.log();
 
 
 

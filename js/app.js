@@ -186,25 +186,69 @@ console.log("Page is working");
 
 //1. For the numbers 0 - 100, print out "I found a number. 
 //High five!" if the number is a multiple of five.
-// for (let i = 0; i <= 100; i++) {
+// for (let i = 1; i <= 100; i++) {
 // 	if (i%5 === 0) {
-// 		console.log("I found a number. High five!");
+// 		console.log(`I found a ${i}. High five!`);
 // 	}
 // }
 
-//2. Adjust your code to add a message next to even numbers only 
-//that says: "<-- is an even number".
+//2. Add to the code from above to print out "I found a 
+// number. Three is a crowd" if the number is a multiple
+// of three.
 
-// for (let i = 0; i <= 100; i++) {
-// 	if (i%2 === 0) {
-// 		console.log(`${i} is an even number`);
+// for (let i = 1; i <= 100; i++) {
+// 	if (i%5 === 0) {
+// 		console.log(`I found a ${i}. High five!`);
+// 	}
+// 	if (i%3 === 0) {
+// 		console.log(`I found a ${i}. Three is a crowd`)
 // 	}
 // }
 
+// D. SAVINGS ACCOUNT
+
+// 1. Write code that will save the sum of all the numbers
+// between 1 - 10 to a variable called bank_account.
+
+// function  sumArray (amount) {
+// 	var bank_account = 0;
+// 	for (i = 0; i < amount.length; ++i) {
+// 		bank_account += amount[i];
+// 	} 
+// 	return bank_account;
+// }
+
+// console.log(sumArray([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));  //=> 55
+
+//2. You got a bonus! Your pay is now doubled each week.
+//  Write code that will save the sum of all the numbers 
+//between 1 - 100 multiplied by 2.
+
+ // more info https://stackoverflow.com/questions/17369779/how-to-write-a-function-to-double-numbers-and-pass-them-as-to-an-object
+// https://medium.com/@chrisburgin95/rewriting-javascript-sum-an-array-dbf838996ed0
+
+// var sumArray = Array(100);
+// var bank_account = []; {
+// 	for (i = 0; i < sumArray.length; i++) {
+// 		bank_account += sumArray[i];
+// 	}
+// 	return bank_account;
+// }
+// var n = sumArray.toFixed(2);
+// // return bank_account;
+// console.log(sumArray);
 
 
 
+// E. MULTIPLES OF 3 AND 5
 
+// for (let i = 1; i <= 1000; i++){
+// 	if(i%3 === 0){
+// 		console.log(`${i}`);
+// 	} if(i%5 === 0){
+// 		console.log(`${i}`);
+// 	}
+// }
 
 
 

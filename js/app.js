@@ -262,13 +262,18 @@ console.log("Page is working");
 // Arrays need to be organized and not guaranteed.
 
 //3. What real-life thing could you model with an array?
-//One thing that can be modeled is a persons information like name, age, and email.
+//One thing that can be modeled is a persons information 
+//like name, age, and email.
 
 
+//B. EASY DOES IT
 
+//1. Create an array that contains three quotes and store
+// it in a variable called quotes.
 
+const quotes = ["Be yourself, everyone else is already taken.", "So many books, so little time.", "Be the change that you wishto see in the world."];
 
-
+console.log(quotes);
 
 
 

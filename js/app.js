@@ -251,6 +251,18 @@ console.log("Page is working");
 // }
 
 
+// III. ARRAYS AND CONTROL FLOW
+
+//A. TALK ABOUT IT
+
+//1. What are the things in an array called?
+//The things in an array are called values.
+
+//2. Do Arrays guarantee those things will be in order?
+// Arrays need to be organized and not guaranteed.
+
+//3. What real-life thing could you model with an array?
+//One thing that can be modeled is a persons information like name, age, and email.
 
 
 

@@ -271,29 +271,69 @@ console.log("Page is working");
 //1. Create an array that contains three quotes and store
 // it in a variable called quotes.
 
-const quotes = ["Be yourself, everyone else is already taken.", "So many books, so little time.", "Be the change that you wishto see in the world."];
+// const quotes = ["Be yourself, everyone else is already taken.", "So many books, so little time.", "Be the change that you wishto see in the world."];
 
-console.log(quotes);
-console.log(quotes[0]);
-
-
-//C. ACCESSING ELEMENTS
-const randomThings = [1, 10, "Hello", true];
-
-//1. How do you access the 1st element in the array?
-console.log(randomThings[0]);
-
-//2. Change the value of "Hello" to "World".
-randomThings[2] = "World";
-console.log(randomThings);
-
-//3. Check the value of the array to make sure it updated the array. How? Why, yes! console.log();
+// console.log(quotes);
+// console.log(quotes[0]);
 
 
+// //C. ACCESSING ELEMENTS
+
+// const randomThings = [1, 10, "Hello", true];
+
+// //1. How do you access the 1st element in the array?
+// console.log(randomThings[0]);
+
+// //2. Change the value of "Hello" to "World".
+// randomThings[2] = "World";
+
+// //3. Check the value of the array to make sure it updated the array. How? Why, yes! console.log();
+// console.log(randomThings);
 
 
+//D. CHANGE VALUES
+
+// const ourClass = ["Salty", "Zoom", "Sardine", "Slack", "Github"]
+
+// // //1.  What would you write to access the 3rd element of the array?
+// console.log(ourClass[2]);
+
+// // //2.  Change the value of "Github" to "Octocat"
+// ourClass[4] = "Octocat";
+// console.log(ourClass);
+
+// // //3.  Add a new element, "Cloud City" to the array.
+// ourClass.push("Cloud City");
+// console.log(ourClass);
 
 
+//E. MIXED IT UP
+
+// const myArray = [5, 10, 500, 20]
+
+// // 1. Add the string "Egon" to the end of the array. Add another string of 
+// // your choice to the end of the array.
+// myArray.push("Egon", "Sarah");
+// console.log(myArray);
+
+// // 2. Remove the 5 from the beginning of the array.
+// myArray.shift([0]);
+// console.log(myArray);
+
+// // 3. Add the string "Bob Marley" to the beginning of the array.
+// myArray.unshift('Bob Marley');
+// console.log(myArray);
+
+// // 4. Remove the string of your choice from the end of the array.
+// myArray.pop();
+// console.log(myArray);
+
+// // 5. Reverse this array using Array.prototype.reverse(). Did you mutate the
+// //  array? What does mutate mean? Did the .reverse() method return anything?
+// myArray.reverse();
+// console.log(myArray);
+
+// //the values were reversed 
 
 
 

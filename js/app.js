@@ -338,23 +338,35 @@ console.log("Page is working");
 
 //F. BIGGIE SMALLS
 
-const age = 120; {
+// const age = 120; {
 
-//1. 
-//console.log()s "little number" if the number is entered is less than 100
-	if (age < 100) {
-		console.log("little number");
-	}
-//2. 
-//console.log()s big number if the number is greater than or equal to 100.
-	if (age >= 100) {
-		console.log("Big number")
-	}
+// //1. 
+// //console.log()s "little number" if the number is entered is less than 100
+// 	if (age < 100) {
+// 		console.log("little number");
+// 	}
+// //2. 
+// //console.log()s big number if the number is greater than or equal to 100.
+// 	if (age >= 100) {
+// 		console.log("Big number");
+// 	}
+// }
+
+
+//G. MONKEY IN THE MIDDLE
+
+//1. console.log() little number if the number entered is less than 5.
+const age = 8; {
+
+//2. If the number entered is more than 10, log big number.
+	if (age > 10) {
+		console.log("Big number");
+
+//3. Otherwise, log "monkey". 
+	} else {
+		console.log("monkey");
+	} 
 }
-
-
-
-
 
 
 

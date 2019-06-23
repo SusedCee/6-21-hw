@@ -336,6 +336,68 @@ console.log("Page is working");
 // //the values were reversed 
 
 
+//F. BIGGIE SMALLS
+
+const age = 120; {
+
+//1. 
+//console.log()s "little number" if the number is entered is less than 100
+	if (age < 100) {
+		console.log("little number");
+	}
+//2. 
+//console.log()s big number if the number is greater than or equal to 100.
+	if (age >= 100) {
+		console.log("Big number")
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

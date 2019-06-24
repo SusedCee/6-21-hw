@@ -239,8 +239,23 @@ console.log("Page is working");
 // console.log(sumArray);
 
 
+// E. MULTIPLES OF 3 AND 5
 
-// E. MULTIPLES OF 3 AND 5 ------------------------------------------
+//If we list all the natural numbers below 10 that are multiples of 
+//3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
+
+//Find the sum of all the multiples of 3 or 5 below 1000. If a previous---------------------------
+// question you've done has helpful bits of code in it that partially 
+//solves this problem, look back at them.
+
+//You just solved Project Euler problem 1!
+
+//Are you having dejà vu? This just in! From the "Read the entire 
+//problem before you start" dept: This problem was on a previous assignment. 
+//You may skip it if you've already done it, just include a comment saying 
+//that you've already done it. If you've now done the problem twice, perhaps 
+//next time you'll read the whole problem before starting it.
+
 
 // for (let i = 1; i <= 1000; i++){
 // 	if(i%3 === 0){
@@ -581,43 +596,164 @@ console.log("Page is working");
 //console.log(reverseWordOrder("I use Lâncome on my comb")); // => "comb my on Lâncome use I"
 
 
+//K. Get down and dirty with Math.random() -----------------------------------
+
+//1. Write a function that will return a random integer between
+// 1 and 10. Test it.
+
+//2. Write a function that will return a random integer between
+// 10 and 100. Test it.
+
+//3. Write a function that will return a random number between 
+//532 and 13267. Test it.
+
+//4. Write a function that will return a random number between 
+//1 and 10. Test it.
+
+//5. Add a few more quotes to the quotes array from question 
+//III-B-1 above. Write a function that will take an array as a 
+//parameter, and return a random element from that array. Call 
+//your function a few times, passing in the quotes array. Give 
+//it a nice semantic name like getRandomElement.
+
+
 //V. OBJECTS
+
 
 //A. MAKE A USER OBJECT
 
-//Create an object called user.
+//1. Create an object called user.
 //const user {} ;
 
 
-//Write in to the object the key-value pairs for name, email, age, and purchased. 
+//2. Write in to the object the key-value pairs for name, email, age, and purchased. 
 //Set the value of purchased to an empty array []. Set the other values to whatever
 // you would like.
 const user = {
 	name: "Sused",
 	email: "sused.cabrera@gmail.com",
 	age: 27,
-	purchased: [],
+	purchased: []
 }
 
+//B. UPDATE THE USER
+
+//1. Our user has changed his or her email address. Without changing the original 
+//user object, update the email value to a new email address.
+user["email"] = "strivingsused@aol.com";
+console.log(user["email"]);
+
+// //2. Our user has had a birthday! Without changing the original user object, ----------------------------
+// //increment the age value using the postfix operator. Hint: age++
+
+// user[age]++;
+
+// console.log(user["age"]);
+
+
+//C. ADDING KEYS AND VALUES
+
+//Without changing the original user object, add a new key location to the object,
+// and give it a value or some-or-other location (a string).
+
+user["location"] = "Denver";
+console.log(user['location']);
+
+//D. SHOPAHOLIC!
+
+//1. Our user has purchased an item! They have purchased some "carbohydrates". Using
+// .push(), add the string "carbohydrates" to the purchased array.
+user["purchased"].push("carbohydrates");
+console.log(user['purchased']);
+
+// //2. Our user has purchased an item! They have purchased some "peace of mind". Using
+// // .push(), add the string "peace of mind" to the purchased array.
+user["purchased"].push("peace of mind");
+console.log(user['purchased']);
+
+// //3. Our user has purchased an item! They have purchased some "Merino jodhpurs". Using
+// // .push(), add the string "Merino jodhpurs" to the purchased array.
+user["purchased"].push("Merino jodhpurs");
+console.log(user['purchased']);
+
+// //4. Console.log just the "Merino jodhpurs" from the purchased array.
+
+console.log(user['purchased'][2]);
 
 
 
+//E. OBJECT-WITHIN-OBJECT---------------------------------------------
+
+//Remember that you can add an object to an existing object in the same way
+// that you can add any new property/value pair.
+
+//If we want to give our user a friend with a name and age, we could write:
+
+user.friend = {
+    name: "Grace Hopper",
+    age: 85
+}
+
+// When we console.log user, we would see the friend object added to our user object.
+
+// 1. Write a friend object into your user object and give the friend a name, age, 
+//location, and purchased array (empty for now)
+
+user.friend["friend"] = {
+	name: "Conor",
+	age: 32,
+	location: "Boulder",
+	purchased: []
+}
+
+console.log(user["friend"]); //------------------------------
+
+// 2. Console.log just the friend's name-----------------------------
+console.log(user["friend"]["name"]);
+
+// 3. Console.log just the friend's location -----------------------
+console.log(user["friend"]["location"]);
+
+// 4. CHANGE the friend's age to 55----------------------------------
+user.friend.friend["age"] = 55;
+console.log(user.friend.age);
+
+// 5. The friend has purchased "The One Ring". Use .push() to add "The One Ring" to -------------------------
+//the friend's purchased array.
+uuser.friend.friend[]
+
+// 6. The friend has purchased "A latte". Use .push() to add "A latte" to the friend's ---------------------------
+//purchased array.
+
+
+// 7. Console.log just "A latte" from the friend's purchased array. ------------------------------
+
+
+//F. LOOPS
+
+// 1. Write a for loop that iterates over the User's purchased array ----------------------------------
+//(NOT the friend's purchased array), and prints each element to the console.
+
+
+// 2. Write a for loop that iterates over the Friend's purchased array, ----------------------------
+//and prints each element to the console.
 
 
 
+//G. FUNCTIONS CAN OPERATE ON OBJECTS
+
+// 1. Write a single function updateUser that takes no parameters. When the function is run, it should:------------------------
+// -it should increment the user's age by 1
+// -make the user's name uppercase
 
 
 
+// The function does not need a return statement, it will merely modify the user object.
 
-
-
-
-
-
-
-
-
-
+// 2. Write a function oldAndLoud that performs the exact same tasks as updateUser, but instead of 
+//hard-coding it to only work on our user object, make it take a parameter person, and have it modify 
+//the object that is passed in as an argument when the function is called. Call your oldAndLoud function 
+//with user as the argument.
 
 
 

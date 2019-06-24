@@ -426,7 +426,7 @@ console.log("Page is working");
 // to access items in kristynsCloset, log the sentence "Kristyn
 // is rocking that " + the third item in Kristyn's closet + " today!" 
 //to the console.
-
+// console.log(kristynsCloset.("Kristyn is rocking that " + [2] + " today!")); 
 
 //2.  Kristyn just bought some sweet shades! Add "raybans" to her 
 //closet after "yellow knit hat".
@@ -507,8 +507,14 @@ console.log("Page is working");
 // the length of the corresponding string.
 
 
-// const getTwoLengths = [array]; { 
-// 	return getTwoLengths.length([array]);
+// const getTwoLengths = (arrayOfStrings) =>  { 
+
+// 	let array1 = string1.split("");
+
+// 	let array2 = string2.split("");
+// 	const arrayLength  = [array1.length, array2.length];
+
+// 	return arrayLength;
 // }
 // console.log(getTwoLengths("Hank", "Hippopopalous")); // => [4, 13]
 
@@ -518,6 +524,14 @@ console.log("Page is working");
 // as an argument: an array of strings. The function should return an 
 //array of numbers where each number is the length of the corresponding 
 //string.
+
+// const getMultipleLengths =  (arrayOfStrings) => {
+// 	for(i = 0; i < getMultipleLengths.length; i++){
+// 		function
+// 	}
+// 	return 
+// }
+	
 
 //console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"])); //=> [5, 4, 2, 2, 4]
 
@@ -529,8 +543,12 @@ console.log("Page is working");
 //are the same, one of them should be returned. Be sure to test it 
 //with larger values in each of the three locations.
 
-// function maxOfThree(array) {
-// 	return Math.max(array);
+// const maxOfThree = (highestNumber) => {
+// 	for (i= 0; i < maxOfThree.length; i++){
+// 		if (i[0].length > i[1].length){
+// 		} else if (i)
+// 		function Math.max(highestNumber)
+// 	}
 // }
 
 // console.log(maxOfThree(6, 9, 1)); //9
@@ -576,12 +594,27 @@ console.log("Page is working");
 // function should return a string with the order of the words reversed. 
 // Don't worry about punctuation.
 
+// function reverseWordOrder (str) {
+//   let rev = "";
+//   let arr = [];
+
+//   for (let i = 0; i <= str.length; i++) {
+//     if (str[i] === " ") {
+//       arr.unshift(rev);
+//       rev = "";
+//     } else {
+//       rev += str[i];
+//     }
+//   }
+
+//   return arr
+// }
+// console.log(reverseWordOrder);
 
 // See if you can do it without googling.
 
 
 // Remember: You can index directly into a string:
-
 
 
 //"hello world"[7] //=> "o"
@@ -591,15 +624,29 @@ console.log("Page is working");
 //to solve this without the Array methods.
 
 
-//console.log(reverseWordOrder("Ishmael me Call")); // => "Call me Ishmael"
+// console.log(reverseWordOrder("Ishmael me Call")); // => "Call me Ishmael"
 
-//console.log(reverseWordOrder("I use Lâncome on my comb")); // => "comb my on Lâncome use I"
+// console.log(reverseWordOrder("I use Lâncome on my comb")); // => "comb my on Lâncome use I"
 
 
 //K. Get down and dirty with Math.random() -----------------------------------
 
 //1. Write a function that will return a random integer between
 // 1 and 10. Test it.
+
+// function getRandom(min,max) {
+// 	return Math.random() * (max - min) + min;
+// }
+// console.log(getRandom(0, 1));
+
+
+
+// function getRandom(min, max) {
+// 	min = Math.top
+// }
+// for (let i = 0; i <= 10; i++) {
+  
+// }
 
 //2. Write a function that will return a random integer between
 // 10 and 100. Test it.
@@ -625,135 +672,136 @@ console.log("Page is working");
 //1. Create an object called user.
 //const user {} ;
 
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-//2. Write in to the object the key-value pairs for name, email, age, and purchased. 
-//Set the value of purchased to an empty array []. Set the other values to whatever
-// you would like.
-const user = {
-	name: "Sused",
-	email: "sused.cabrera@gmail.com",
-	age: 27,
-	purchased: []
-}
+// //2. Write in to the object the key-value pairs for name, email, age, and purchased. 
+// //Set the value of purchased to an empty array []. Set the other values to whatever
+// // you would like.
+// const user = {
+// 	name: "Sused",
+// 	email: "sused.cabrera@gmail.com",
+// 	age: 27,
+// 	purchased: []
+// }
 
-//B. UPDATE THE USER
+// //B. UPDATE THE USER
 
-//1. Our user has changed his or her email address. Without changing the original 
-//user object, update the email value to a new email address.
-user["email"] = "strivingsused@aol.com";
-console.log(user["email"]);
+// //1. Our user has changed his or her email address. Without changing the original 
+// //user object, update the email value to a new email address.
+// user["email"] = "strivingsused@aol.com";
+// console.log(user["email"]);
 
-// //2. Our user has had a birthday! Without changing the original user object, ----------------------------
-// //increment the age value using the postfix operator. Hint: age++
+// // //2. Our user has had a birthday! Without changing the original user object, ----------------------------
+// // //increment the age value using the postfix operator. Hint: age++
 
-// user[age]++;
+// // user[age]++;
 
-// console.log(user["age"]);
-
-
-//C. ADDING KEYS AND VALUES
-
-//Without changing the original user object, add a new key location to the object,
-// and give it a value or some-or-other location (a string).
-
-user["location"] = "Denver";
-console.log(user['location']);
-
-//D. SHOPAHOLIC!
-
-//1. Our user has purchased an item! They have purchased some "carbohydrates". Using
-// .push(), add the string "carbohydrates" to the purchased array.
-user["purchased"].push("carbohydrates");
-console.log(user['purchased']);
-
-// //2. Our user has purchased an item! They have purchased some "peace of mind". Using
-// // .push(), add the string "peace of mind" to the purchased array.
-user["purchased"].push("peace of mind");
-console.log(user['purchased']);
-
-// //3. Our user has purchased an item! They have purchased some "Merino jodhpurs". Using
-// // .push(), add the string "Merino jodhpurs" to the purchased array.
-user["purchased"].push("Merino jodhpurs");
-console.log(user['purchased']);
-
-// //4. Console.log just the "Merino jodhpurs" from the purchased array.
-
-console.log(user['purchased'][2]);
+// // console.log(user["age"]);
 
 
+// //C. ADDING KEYS AND VALUES
 
-//E. OBJECT-WITHIN-OBJECT---------------------------------------------
+// //Without changing the original user object, add a new key location to the object,
+// // and give it a value or some-or-other location (a string).
 
-//Remember that you can add an object to an existing object in the same way
-// that you can add any new property/value pair.
+// user["location"] = "Denver";
+// console.log(user['location']);
 
-//If we want to give our user a friend with a name and age, we could write:
+// //D. SHOPAHOLIC!
 
-user.friend = {
-    name: "Grace Hopper",
-    age: 85
-}
+// //1. Our user has purchased an item! They have purchased some "carbohydrates". Using
+// // .push(), add the string "carbohydrates" to the purchased array.
+// user["purchased"].push("carbohydrates");
+// console.log(user['purchased']);
 
-// When we console.log user, we would see the friend object added to our user object.
+// // //2. Our user has purchased an item! They have purchased some "peace of mind". Using
+// // // .push(), add the string "peace of mind" to the purchased array.
+// user["purchased"].push("peace of mind");
+// console.log(user['purchased']);
 
-// 1. Write a friend object into your user object and give the friend a name, age, 
-//location, and purchased array (empty for now)
+// // //3. Our user has purchased an item! They have purchased some "Merino jodhpurs". Using
+// // // .push(), add the string "Merino jodhpurs" to the purchased array.
+// user["purchased"].push("Merino jodhpurs");
+// console.log(user['purchased']);
 
-user.friend["friend"] = {
-	name: "Conor",
-	age: 32,
-	location: "Boulder",
-	purchased: []
-}
+// // //4. Console.log just the "Merino jodhpurs" from the purchased array.
 
-console.log(user["friend"]); //------------------------------
-
-// 2. Console.log just the friend's name-----------------------------
-console.log(user["friend"]["name"]);
-
-// 3. Console.log just the friend's location -----------------------
-console.log(user["friend"]["location"]);
-
-// 4. CHANGE the friend's age to 55----------------------------------
-user.friend.friend["age"] = 55;
-console.log(user.friend.age);
-
-// 5. The friend has purchased "The One Ring". Use .push() to add "The One Ring" to -------------------------
-//the friend's purchased array.
-uuser.friend.friend[]
-
-// 6. The friend has purchased "A latte". Use .push() to add "A latte" to the friend's ---------------------------
-//purchased array.
-
-
-// 7. Console.log just "A latte" from the friend's purchased array. ------------------------------
-
-
-//F. LOOPS
-
-// 1. Write a for loop that iterates over the User's purchased array ----------------------------------
-//(NOT the friend's purchased array), and prints each element to the console.
-
-
-// 2. Write a for loop that iterates over the Friend's purchased array, ----------------------------
-//and prints each element to the console.
+// console.log(user['purchased'][2]);
 
 
 
-//G. FUNCTIONS CAN OPERATE ON OBJECTS
+// //E. OBJECT-WITHIN-OBJECT---------------------------------------------
 
-// 1. Write a single function updateUser that takes no parameters. When the function is run, it should:------------------------
-// -it should increment the user's age by 1
-// -make the user's name uppercase
+// //Remember that you can add an object to an existing object in the same way
+// // that you can add any new property/value pair.
+
+// //If we want to give our user a friend with a name and age, we could write:
+
+// user.friend = {
+//     name: "Grace Hopper",
+//     age: 85
+// }
+
+// // When we console.log user, we would see the friend object added to our user object.
+
+// // 1. Write a friend object into your user object and give the friend a name, age, 
+// //location, and purchased array (empty for now)
+
+// user.friend["friend"] = {
+// 	name: "Conor",
+// 	age: 32,
+// 	location: "Boulder",
+// 	purchased: []
+// }
+
+// console.log(user["friend"]); //------------------------------
+
+// // 2. Console.log just the friend's name-----------------------------
+// console.log(user["friend"]["name"]);
+
+// // 3. Console.log just the friend's location -----------------------
+// console.log(user["friend"]["location"]);
+
+// // 4. CHANGE the friend's age to 55----------------------------------
+// user.friend.friend["age"] = 55;
+// console.log(user.friend.age);
+
+// // 5. The friend has purchased "The One Ring". Use .push() to add "The One Ring" to -------------------------
+// //the friend's purchased array.
+// uuser.friend.friend[]
+
+// // 6. The friend has purchased "A latte". Use .push() to add "A latte" to the friend's ---------------------------
+// //purchased array.
+
+
+// // 7. Console.log just "A latte" from the friend's purchased array. ------------------------------
+
+
+// //F. LOOPS
+
+// // 1. Write a for loop that iterates over the User's purchased array ----------------------------------
+// //(NOT the friend's purchased array), and prints each element to the console.
+	for (i = 0; i > user.friend.)
+
+// // 2. Write a for loop that iterates over the Friend's purchased array, ----------------------------
+// //and prints each element to the console.
 
 
 
-// The function does not need a return statement, it will merely modify the user object.
+// //G. FUNCTIONS CAN OPERATE ON OBJECTS
 
-// 2. Write a function oldAndLoud that performs the exact same tasks as updateUser, but instead of 
-//hard-coding it to only work on our user object, make it take a parameter person, and have it modify 
-//the object that is passed in as an argument when the function is called. Call your oldAndLoud function 
-//with user as the argument.
+// // 1. Write a single function updateUser that takes no parameters. When the function is run, it should:------------------------
+// // -it should increment the user's age by 1
+// // -make the user's name uppercase
+
+
+
+// // The function does not need a return statement, it will merely modify the user object.
+
+// // 2. Write a function oldAndLoud that performs the exact same tasks as updateUser, but instead of 
+// //hard-coding it to only work on our user object, make it take a parameter person, and have it modify 
+// //the object that is passed in as an argument when the function is called. Call your oldAndLoud function 
+// //with user as the argument.
 
 
 

@@ -374,37 +374,37 @@ console.log("Page is working");
 //Below, we've given you examples of Kristyn and Thom's 
 //closets modeled as data in JavaScript.
 
-const kristynsCloset = [
-  "left shoe",
-  "cowboy boots",
-  "right sock",
-  "GA hoodie",
-  "green pants",
-  "yellow knit hat",
-  "marshmallow peeps"
-];
+// const kristynsCloset = [
+//   "left shoe",
+//   "cowboy boots",
+//   "right sock",
+//   "GA hoodie",
+//   "green pants",
+//   "yellow knit hat",
+//   "marshmallow peeps"
+// ];
 
-// Thom's closet is more complicated. Check out this 
-//nested data structure!!
-const thomsCloset = [
-  [
-    // These are Thom's shirts
-    "grey button-up",
-    "dark grey button-up",
-    "light blue button-up",
-    "blue button-up",
-  ],[
-    // These are Thom's pants
-    "grey jeans",
-    "jeans",
-    "PJs"
-  ],[
-    // Thom's accessories
-    "wool mittens",
-    "wool scarf",
-    "raybans"
-  ]
-];
+// // Thom's closet is more complicated. Check out this 
+// //nested data structure!!
+// const thomsCloset = [
+//   [
+//     // These are Thom's shirts
+//     "grey button-up",
+//     "dark grey button-up",
+//     "light blue button-up",
+//     "blue button-up",
+//   ],[
+//     // These are Thom's pants
+//     "grey jeans",
+//     "jeans",
+//     "PJs"
+//   ],[
+//     // Thom's accessories
+//     "wool mittens",
+//     "wool scarf",
+//     "raybans"
+//   ]
+// ];
 
 
 //1.  What's Kristyn wearing today? Using bracket notation
@@ -462,17 +462,36 @@ const thomsCloset = [
 // Write a function calculateCube that takes a single number and 
 // prints the volume of a cube made from that number.
 
-const calculateCube = (number) => {
-	console.log(Math.pow(number, 3));
+// function calculateCube(number) {
+// 	return Math.pow(number, 3)
+// }
+// console.log(calculateCube(5));
+// console.log(calculateCube(3));
+
+
+
+// const calculateCube = (number) => {
+// 	console.log(Math.pow(number, 3));
+// }
+// console.log(calculateCube(5));
+
+
+//D. isVowel
+
+//Write a function isVowel that takes a character (i.e. a string
+// of length 1) and returns true if it is a vowel, false otherwise. 
+//The vowel could be upper or lower case. Test your function on 
+//every vowel and make sure it's working. In general, when you 
+//write functions, take a minute to test them with different values
+// to make sure they behave the way you want.
+
+function isVowel(character) {
+	return ['a', 'e', 'i', 'o', 'u'].indexOf(character.toLowerCase()) !== -1
 }
-console.log(calculateCube(5));
 
-
-
-
-
-
-
+console.log(isVowel("a")); //=> true
+console.log(isVowel("A"));
+console.log(isVowel("z"));
 
 
 

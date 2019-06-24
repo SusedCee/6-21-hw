@@ -220,7 +220,7 @@ console.log("Page is working");
 
 // console.log(sumArray([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));  //=> 55
 
-//2. You got a bonus! Your pay is now doubled each week.
+//2. You got a bonus! Your pay is now doubled each week.----------------------------------------
 //  Write code that will save the sum of all the numbers 
 //between 1 - 100 multiplied by 2.
 
@@ -240,7 +240,7 @@ console.log("Page is working");
 
 
 
-// E. MULTIPLES OF 3 AND 5
+// E. MULTIPLES OF 3 AND 5 ------------------------------------------
 
 // for (let i = 1; i <= 1000; i++){
 // 	if(i%3 === 0){
@@ -369,7 +369,7 @@ console.log("Page is working");
 // }
 
 
-//H. WHAT'S IN YOUR CLOSET?
+//H. WHAT'S IN YOUR CLOSET? -------------------------------------------------
 
 //Below, we've given you examples of Kristyn and Thom's 
 //closets modeled as data in JavaScript.
@@ -469,13 +469,6 @@ console.log("Page is working");
 // console.log(calculateCube(3));
 
 
-
-// const calculateCube = (number) => {
-// 	console.log(Math.pow(number, 3));
-// }
-// console.log(calculateCube(5));
-
-
 //D. isVowel
 
 //Write a function isVowel that takes a character (i.e. a string
@@ -485,14 +478,126 @@ console.log("Page is working");
 //write functions, take a minute to test them with different values
 // to make sure they behave the way you want.
 
-function isVowel(character) {
-	return ['a', 'e', 'i', 'o', 'u'].indexOf(character.toLowerCase()) !== -1
+// function isVowel(character) {
+// 	return ['a', 'e', 'i', 'o', 'u'].indexOf(character.toLowerCase()) !== -1
+// }
+
+// console.log(isVowel("a")); //=> true
+// console.log(isVowel("A"));
+// console.log(isVowel("z"));
+
+//E. getTwoLengths -----------------------------------------------
+//Write a function getTwoLengths that accepts two parameters (strings).
+// The function should return an array of numbers where each number is
+// the length of the corresponding string.
+
+
+// const getTwoLengths = [array]; { 
+// 	return getTwoLengths.length([array]);
+// }
+// console.log(getTwoLengths("Hank", "Hippopopalous")); // => [4, 13]
+
+
+//F. getMultipleLengths ------------------------------------------------
+//Write a function getMultipleLengths that accepts a single parameter
+// as an argument: an array of strings. The function should return an 
+//array of numbers where each number is the length of the corresponding 
+//string.
+
+//console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"])); //=> [5, 4, 2, 2, 4]
+
+
+//G. maxOfThree ----------------------------------------
+//Define a function maxOfThree that takes three numbers as arguments 
+//and returns the largest of them. If all numbers are the same, it 
+//doesn't matter which one is returned. If the two largest numbers 
+//are the same, one of them should be returned. Be sure to test it 
+//with larger values in each of the three locations.
+
+// function maxOfThree(array) {
+// 	return Math.max(array);
+// }
+
+// console.log(maxOfThree(6, 9, 1)); //9
+
+//H. printLongestWord---------------------------------------
+//Write a function printLongestWord that accepts a single argument, 
+//an array of strings. The method should return the longest word in
+// the array. In case of a tie, the method should return the word 
+//that appears first in the array.
+
+// function printLongestWord(strings) {
+
+// 	return Math.max(strings);
+// }
+
+
+// console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
+
+// //=> "Peanutbutter"
+
+//I. transmogrify ---------------------------------------
+
+//Write a Javascript function called transmogrify. This function 
+//should accept three arguments, which you can assume will be numbers. 
+//Your function should return the "transmogrified" result.
+
+
+
+//The transmogrified result of three numbers is the product of the 
+//first two numbers, raised to the power of the third number.
+
+//For example, the transmogrified result of 5, 3, and 2 is 
+//(5 times 3) to the power of 2 is 225.
+
+
+//console.log(transmogrify(5, 3, 2)); //=> 225
+
+
+//J. reverseWordOrder v2 -----------------------------------------------
+
+// Without using .split(), .reverse(), or .join(), write a function 
+// reverseWordOrder that accepts a single argument, a string. The 
+// function should return a string with the order of the words reversed. 
+// Don't worry about punctuation.
+
+
+// See if you can do it without googling.
+
+
+// Remember: You can index directly into a string:
+
+
+
+//"hello world"[7] //=> "o"
+
+
+//That and basic loops and variables and arrays are all you need 
+//to solve this without the Array methods.
+
+
+//console.log(reverseWordOrder("Ishmael me Call")); // => "Call me Ishmael"
+
+//console.log(reverseWordOrder("I use Lâncome on my comb")); // => "comb my on Lâncome use I"
+
+
+//V. OBJECTS
+
+//A. MAKE A USER OBJECT
+
+//Create an object called user.
+//const user {} ;
+
+
+//Write in to the object the key-value pairs for name, email, age, and purchased. 
+//Set the value of purchased to an empty array []. Set the other values to whatever
+// you would like.
+const user = {
+	name: "Sused",
+	email: "sused.cabrera@gmail.com",
+	age: 27,
+	purchased: [],
 }
-
-console.log(isVowel("a")); //=> true
-console.log(isVowel("A"));
-console.log(isVowel("z"));
-
 
 
 

@@ -220,31 +220,29 @@ console.log("Page is working");
 
 // console.log(sumArray([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));  //=> 55
 
-//2. You got a bonus! Your pay is now doubled each week.----------------------------------------
+//2. You got a bonus! Your pay is now doubled each week.
 //  Write code that will save the sum of all the numbers 
 //between 1 - 100 multiplied by 2.
 
  // more info https://stackoverflow.com/questions/17369779/how-to-write-a-function-to-double-numbers-and-pass-them-as-to-an-object
 // https://medium.com/@chrisburgin95/rewriting-javascript-sum-an-array-dbf838996ed0
 
-// var sumArray = Array(100);
-// var bank_account = []; {
-// 	for (i = 0; i < sumArray.length; i++) {
-// 		bank_account += sumArray[i];
+// making an array of 1-100 https://stackoverflow.com/questions/3746725/how-to-create-an-array-containing-1-n/54996234
+
+// let bank_account = 0
+// 	for (i = 0; i < 100; i++) {
+// 		bank_account += (i*2)
 // 	}
-// 	return bank_account;
-// }
-// var n = sumArray.toFixed(2);
-// // return bank_account;
-// console.log(sumArray);
+ 
+// console.log(bank_account);
 
 
-// E. MULTIPLES OF 3 AND 5
+// E. MULTIPLES OF 3 AND 5. ------------------------------- DID NOT HAVE TO DO
 
 //If we list all the natural numbers below 10 that are multiples of 
 //3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
 
-//Find the sum of all the multiples of 3 or 5 below 1000. If a previous---------------------------
+//Find the sum of all the multiples of 3 or 5 below 1000. If a previous
 // question you've done has helpful bits of code in it that partially 
 //solves this problem, look back at them.
 
@@ -384,10 +382,10 @@ console.log("Page is working");
 // }
 
 
-//H. WHAT'S IN YOUR CLOSET? -------------------------------------------------
+// //H. WHAT'S IN YOUR CLOSET?
 
-//Below, we've given you examples of Kristyn and Thom's 
-//closets modeled as data in JavaScript.
+// //Below, we've given you examples of Kristyn and Thom's 
+// //closets modeled as data in JavaScript.
 
 // const kristynsCloset = [
 //   "left shoe",
@@ -422,37 +420,41 @@ console.log("Page is working");
 // ];
 
 
-//1.  What's Kristyn wearing today? Using bracket notation
-// to access items in kristynsCloset, log the sentence "Kristyn
-// is rocking that " + the third item in Kristyn's closet + " today!" 
-//to the console.
-// console.log(kristynsCloset.("Kristyn is rocking that " + [2] + " today!")); 
+// //1.  What's Kristyn wearing today? Using bracket notation
+// // to access items in kristynsCloset, log the sentence "Kristyn
+// // is rocking that " + the third item in Kristyn's closet + " today!" 
+// //to the console.
+// console.log("Kristyn is rocking that " + kristynsCloset[2] + " today!"); 
 
-//2.  Kristyn just bought some sweet shades! Add "raybans" to her 
-//closet after "yellow knit hat".
+// //2.  Kristyn just bought some sweet shades! Add "raybans" to her 
+// //closet after "yellow knit hat".
+// let place = kristynsCloset.indexOf("yellow knit hat")//helps to know where the index is that i want to add things in 
+// kristynsCloset.splice(place+1,0,'raybans'); //+1 add the object after that, and 0 means we dont want to take any out
+// console.log(kristynsCloset);
 
-
-//3.  Kristyn spilled coffee on her hat... modify this item to read
-// "stained knit hat" instead of yellow.
-
-
-//4.  Put together an outfit for Thom! Using bracket notation, access
-// the first element in Thom's shirts array.
-
-
-//5.  In the same way, access one item from Thom's pants array.
+// //3.  Kristyn spilled coffee on her hat... modify this item to read
+// // "stained knit hat" instead of yellow.
+// kristynsCloset[5] = "stained knit hat";
 
 
-//6.  Access one item from Thom's accessories array.
+// //4.  Put together an outfit for Thom! Using bracket notation, access
+// // the first element in Thom's shirts array.
+// console.log(thomsCloset[0][0]);
 
+// //5.  In the same way, access one item from Thom's pants array.
+// console.log(thomsCloset[1][0]);
 
-//7.  Log a sentence about what Thom's wearing. Example: "Thom is 
-//looking fierce in a grey button-up, jeans and wool scarf!"
+// //6.  Access one item from Thom's accessories array.
+// console.log(thomsCloset[2][2]);
 
+// //7.  Log a sentence about what Thom's wearing. Example: "Thom is 
+// //looking fierce in a grey button-up, jeans and wool scarf!"
+// console.log("Thom is looking fierce in a grey button-up, grey jeans, and raybans!");
 
-//8.  Get more specific about what kind of PJs Thom's wearing this 
-//winter. Modify the name of his PJ pants to Footie Pajamas.
-
+// //8.  Get more specific about what kind of PJs Thom's wearing this 
+// //winter. Modify the name of his PJ pants to Footie Pajamas.
+// thomsCloset[1][2] = "Footie Pajamas";
+// console.log(thomsCloset[1]);
 
 
 // IV. FUNCTIONS
@@ -501,23 +503,20 @@ console.log("Page is working");
 // console.log(isVowel("A"));
 // console.log(isVowel("z"));
 
-//E. getTwoLengths -----------------------------------------------
+//E. getTwoLengths ----------------------------------------------- got the first word, but not the second
 //Write a function getTwoLengths that accepts two parameters (strings).
 // The function should return an array of numbers where each number is
 // the length of the corresponding string.
 
+const getTwoLengths = ([string1, string2]) =>  {
+	let twoLengths = []
+	for(i = 0; i < twoLengths.length; i++){
+		twoLengths.push(getTwoLengths[i].length);
+	}
+	return twoLengths
+}
 
-// const getTwoLengths = (arrayOfStrings) =>  { 
-
-// 	let array1 = string1.split("");
-
-// 	let array2 = string2.split("");
-// 	const arrayLength  = [array1.length, array2.length];
-
-// 	return arrayLength;
-// }
-// console.log(getTwoLengths("Hank", "Hippopopalous")); // => [4, 13]
-
+console.log(getTwoLengths("Hank", "Hippopopalous")); // => [4, 13]
 
 //F. getMultipleLengths ------------------------------------------------
 //Write a function getMultipleLengths that accepts a single parameter
@@ -526,14 +525,14 @@ console.log("Page is working");
 //string.
 
 // const getMultipleLengths =  (arrayOfStrings) => {
-// 	for(i = 0; i < getMultipleLengths.length; i++){
-// 		function
+// 	for(let i = 0; i < getMultipleLengths.length; i++){
+// 		getMultipleLengths[i].length;
 // 	}
 // 	return 
 // }
 	
 
-//console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"])); //=> [5, 4, 2, 2, 4]
+// console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"])); //=> [5, 4, 2, 2, 4]
 
 
 //G. maxOfThree ----------------------------------------
@@ -542,6 +541,12 @@ console.log("Page is working");
 //doesn't matter which one is returned. If the two largest numbers 
 //are the same, one of them should be returned. Be sure to test it 
 //with larger values in each of the three locations.
+
+// function getMaxOfThree(numArray) {
+// 	return Math.max.apply(null, numArray);
+// }
+// console.log(getMaxOfThree(6, 9, 1));
+
 
 // const maxOfThree = (highestNumber) => {
 // 	for (i= 0; i < maxOfThree.length; i++){
@@ -666,142 +671,143 @@ console.log("Page is working");
 
 //V. OBJECTS
 
-
 //A. MAKE A USER OBJECT
 
 //1. Create an object called user.
-//const user {} ;
 
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//2. Write in to the object the key-value pairs for name, email, age, and purchased. 
+//Set the value of purchased to an empty array []. Set the other values to whatever
+// you would like.
+const user = {
+	name: "Sused",
+	email: "sused.cabrera@gmail.com",
+	age: 27,
+	purchased: []
+}
 
-// //2. Write in to the object the key-value pairs for name, email, age, and purchased. 
-// //Set the value of purchased to an empty array []. Set the other values to whatever
-// // you would like.
-// const user = {
-// 	name: "Sused",
-// 	email: "sused.cabrera@gmail.com",
-// 	age: 27,
-// 	purchased: []
-// }
+//B. UPDATE THE USER
 
-// //B. UPDATE THE USER
+//1. Our user has changed his or her email address. Without changing the original 
+//user object, update the email value to a new email address.
+user["email"] = "strivingsused@aol.com";
+console.log(user["email"]);
 
-// //1. Our user has changed his or her email address. Without changing the original 
-// //user object, update the email value to a new email address.
-// user["email"] = "strivingsused@aol.com";
-// console.log(user["email"]);
-
-// // //2. Our user has had a birthday! Without changing the original user object, ----------------------------
-// // //increment the age value using the postfix operator. Hint: age++
-
-// // user[age]++;
-
-// // console.log(user["age"]);
+//2. Our user has had a birthday! Without changing the original user object,
+//increment the age value using the postfix operator. Hint: age++
+user.age++;
+console.log(user["age"]);
 
 
-// //C. ADDING KEYS AND VALUES
+//C. ADDING KEYS AND VALUES
 
-// //Without changing the original user object, add a new key location to the object,
-// // and give it a value or some-or-other location (a string).
+//Without changing the original user object, add a new key location to the object,
+// and give it a value or some-or-other location (a string).
 
-// user["location"] = "Denver";
-// console.log(user['location']);
+user["location"] = "Denver";
+console.log(user['location']);
 
-// //D. SHOPAHOLIC!
+//D. SHOPAHOLIC!
 
-// //1. Our user has purchased an item! They have purchased some "carbohydrates". Using
-// // .push(), add the string "carbohydrates" to the purchased array.
-// user["purchased"].push("carbohydrates");
-// console.log(user['purchased']);
+//1. Our user has purchased an item! They have purchased some "carbohydrates". Using
+// .push(), add the string "carbohydrates" to the purchased array.
+user["purchased"].push("carbohydrates");
+console.log(user['purchased']);
 
-// // //2. Our user has purchased an item! They have purchased some "peace of mind". Using
-// // // .push(), add the string "peace of mind" to the purchased array.
-// user["purchased"].push("peace of mind");
-// console.log(user['purchased']);
+//2. Our user has purchased an item! They have purchased some "peace of mind". Using
+// .push(), add the string "peace of mind" to the purchased array.
+user["purchased"].push("peace of mind");
+console.log(user['purchased']);
 
-// // //3. Our user has purchased an item! They have purchased some "Merino jodhpurs". Using
-// // // .push(), add the string "Merino jodhpurs" to the purchased array.
-// user["purchased"].push("Merino jodhpurs");
-// console.log(user['purchased']);
+//3. Our user has purchased an item! They have purchased some "Merino jodhpurs". Using
+// .push(), add the string "Merino jodhpurs" to the purchased array.
+user["purchased"].push("Merino jodhpurs");
+console.log(user['purchased']);
 
-// // //4. Console.log just the "Merino jodhpurs" from the purchased array.
+//4. Console.log just the "Merino jodhpurs" from the purchased array.
 
-// console.log(user['purchased'][2]);
+console.log(user['purchased'][2]);
 
 
 
-// //E. OBJECT-WITHIN-OBJECT---------------------------------------------
+//E. OBJECT-WITHIN-OBJECT~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-// //Remember that you can add an object to an existing object in the same way
-// // that you can add any new property/value pair.
+//Remember that you can add an object to an existing object in the same way
+// that you can add any new property/value pair.
 
-// //If we want to give our user a friend with a name and age, we could write:
+//If we want to give our user a friend with a name and age, we could write:
 
 // user.friend = {
 //     name: "Grace Hopper",
 //     age: 85
 // }
 
-// // When we console.log user, we would see the friend object added to our user object.
+// When we console.log user, we would see the friend object added to our user object.
 
-// // 1. Write a friend object into your user object and give the friend a name, age, 
-// //location, and purchased array (empty for now)
+// 1. Write a friend object into your user object and give the friend a name, age, 
+//location, and purchased array (empty for now)
 
-// user.friend["friend"] = {
-// 	name: "Conor",
-// 	age: 32,
-// 	location: "Boulder",
-// 	purchased: []
-// }
+user.friend = {
+	name: "Conor",
+	age: 32,
+	location: "Boulder",
+	purchased: []
+}
 
-// console.log(user["friend"]); //------------------------------
+console.log(user.friend); 
 
-// // 2. Console.log just the friend's name-----------------------------
-// console.log(user["friend"]["name"]);
+// 2. Console.log just the friend's name
+console.log(user.friend["name"]);
 
-// // 3. Console.log just the friend's location -----------------------
-// console.log(user["friend"]["location"]);
+// 3. Console.log just the friend's location
+console.log(user.friend["location"]);
 
-// // 4. CHANGE the friend's age to 55----------------------------------
-// user.friend.friend["age"] = 55;
+// 4. CHANGE the friend's age to 55
+console.log(user.friend["age"] = 55);
 // console.log(user.friend.age);
 
-// // 5. The friend has purchased "The One Ring". Use .push() to add "The One Ring" to -------------------------
-// //the friend's purchased array.
-// uuser.friend.friend[]
+// 5. The friend has purchased "The One Ring". Use .push() to add "The One Ring" to
+//the friend's purchased array.
+user.friend["purchased"].push("The One Ring");
+console.log(user.friend["purchased"]);
 
-// // 6. The friend has purchased "A latte". Use .push() to add "A latte" to the friend's ---------------------------
-// //purchased array.
+// 6. The friend has purchased "A latte". Use .push() to add "A latte" to the friend's
+//purchased array.
+user.friend["purchased"].push("A latte");
+console.log(user.friend["purchased"]);
 
-
-// // 7. Console.log just "A latte" from the friend's purchased array. ------------------------------
-
+// 7. Console.log just "A latte" from the friend's purchased array. 
+console.log(user.friend["purchased"][1]);
 
 // //F. LOOPS
 
 // // 1. Write a for loop that iterates over the User's purchased array ----------------------------------
 // //(NOT the friend's purchased array), and prints each element to the console.
-	for (i = 0; i > user.friend.)
+	for(let i = 0; i < user["purchased"]; i++){
+		console.log(user["purchased"]);
+	}
 
-// // 2. Write a for loop that iterates over the Friend's purchased array, ----------------------------
-// //and prints each element to the console.
-
-
-
-// //G. FUNCTIONS CAN OPERATE ON OBJECTS
-
-// // 1. Write a single function updateUser that takes no parameters. When the function is run, it should:------------------------
-// // -it should increment the user's age by 1
-// // -make the user's name uppercase
+// 2. Write a for loop that iterates over the Friend's purchased array, ----------------------------
+//and prints each element to the console.
+	for(let i = 0; i < user.friend["purchased"]; i++){
+		console.log(user.friend["purchased"]);
+	}
 
 
 
-// // The function does not need a return statement, it will merely modify the user object.
+//G. FUNCTIONS CAN OPERATE ON OBJECTS
 
-// // 2. Write a function oldAndLoud that performs the exact same tasks as updateUser, but instead of 
-// //hard-coding it to only work on our user object, make it take a parameter person, and have it modify 
-// //the object that is passed in as an argument when the function is called. Call your oldAndLoud function 
-// //with user as the argument.
+// 1. Write a single function updateUser that takes no parameters. When the function is run, it should:------------------------
+// -it should increment the user's age by 1
+// -make the user's name uppercase
+
+
+
+// The function does not need a return statement, it will merely modify the user object.
+
+// 2. Write a function oldAndLoud that performs the exact same tasks as updateUser, but instead of 
+//hard-coding it to only work on our user object, make it take a parameter person, and have it modify 
+//the object that is passed in as an argument when the function is called. Call your oldAndLoud function 
+//with user as the argument.
 
 
 

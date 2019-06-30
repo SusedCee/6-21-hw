@@ -508,15 +508,15 @@ console.log("Page is working");
 // The function should return an array of numbers where each number is
 // the length of the corresponding string.
 
-const getTwoLengths = ([string1, string2]) =>  {
-	let twoLengths = []
-	for(i = 0; i < twoLengths.length; i++){
-		twoLengths.push(getTwoLengths[i].length);
-	}
-	return twoLengths
-}
+// const getTwoLengths = ([string1, string2]) =>  {
+// 	let twoLengths = []
+// 	for(i = 0; i < twoLengths.length; i++){
+// 		twoLengths.push(getTwoLengths[i].length);
+// 	}
+// 	return twoLengths
+// }
 
-console.log(getTwoLengths("Hank", "Hippopopalous")); // => [4, 13]
+// console.log(getTwoLengths("Hank", "Hippopopalous")); // => [4, 13]
 
 //F. getMultipleLengths ------------------------------------------------
 //Write a function getMultipleLengths that accepts a single parameter
@@ -729,7 +729,7 @@ console.log(user['purchased'][2]);
 
 
 
-//E. OBJECT-WITHIN-OBJECT~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//E. OBJECT-WITHIN-OBJECT
 
 //Remember that you can add an object to an existing object in the same way
 // that you can add any new property/value pair.
@@ -780,13 +780,13 @@ console.log(user.friend["purchased"][1]);
 
 // //F. LOOPS
 
-// // 1. Write a for loop that iterates over the User's purchased array ----------------------------------
+// // 1. Write a for loop that iterates over the User's purchased array 
 // //(NOT the friend's purchased array), and prints each element to the console.
 	for(let i = 0; i < user["purchased"]; i++){
 		console.log(user["purchased"]);
 	}
 
-// 2. Write a for loop that iterates over the Friend's purchased array, ----------------------------
+// 2. Write a for loop that iterates over the Friend's purchased array, 
 //and prints each element to the console.
 	for(let i = 0; i < user.friend["purchased"]; i++){
 		console.log(user.friend["purchased"]);
@@ -797,9 +797,16 @@ console.log(user.friend["purchased"][1]);
 //G. FUNCTIONS CAN OPERATE ON OBJECTS
 
 // 1. Write a single function updateUser that takes no parameters. When the function is run, it should:------------------------
-// -it should increment the user's age by 1
+// -increment the user's age by 1
 // -make the user's name uppercase
-
+var updateUser = () {
+	for(let i = 0; i < user.length; i++){
+		user.age++;
+		user["name"].upperCase;
+	} 
+}
+console.log(user["age"]);
+console.log(user["name"]);
 
 
 // The function does not need a return statement, it will merely modify the user object.
@@ -809,8 +816,15 @@ console.log(user.friend["purchased"][1]);
 //the object that is passed in as an argument when the function is called. Call your oldAndLoud function 
 //with user as the argument.
 
-
-
+const oldAndLoud = () {
+let anotherPerson
+	for(let i = 0; i < anotherPerson; i++){
+		user.age++;
+		user["name"].upperCase;
+	}
+	return oldAndLoud
+}
+console.log(anotherPerson(name: "Laura", age: 18, location: "Davis", purchased: "car" ))
 
 
 

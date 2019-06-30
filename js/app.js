@@ -503,76 +503,72 @@ console.log("Page is working");
 // console.log(isVowel("A"));
 // console.log(isVowel("z"));
 
-//E. getTwoLengths ----------------------------------------------- got the first word, but not the second
+//E. getTwoLengths 
 //Write a function getTwoLengths that accepts two parameters (strings).
 // The function should return an array of numbers where each number is
 // the length of the corresponding string.
-
-// const getTwoLengths = ([string1, string2]) =>  {
-// 	let twoLengths = []
-// 	for(i = 0; i < twoLengths.length; i++){
-// 		twoLengths.push(getTwoLengths[i].length);
+// const getTwoLengths = (arr) =>  {
+// 	const twoLengths = arr.length
+// 	for(let i = 0; i < twoLengths; i++){
+// 		console.log(arr[i].length);
 // 	}
-// 	return twoLengths
 // }
+// getTwoLengths(["Hank", "Hippopopalous"]); // => [4, 13]
 
-// console.log(getTwoLengths("Hank", "Hippopopalous")); // => [4, 13]
-
-//F. getMultipleLengths ------------------------------------------------
+//F. getMultipleLengths
 //Write a function getMultipleLengths that accepts a single parameter
 // as an argument: an array of strings. The function should return an 
 //array of numbers where each number is the length of the corresponding 
 //string.
 
-// const getMultipleLengths =  (arrayOfStrings) => {
-// 	for(let i = 0; i < getMultipleLengths.length; i++){
-// 		getMultipleLengths[i].length;
+// const getMultipleLengths = (arr) => {
+// 	const arrayLength = arr.length
+// 	for(let i = 0; i < arrayLength; i++){
+// 		console.log(arr[i].length);
 // 	}
-// 	return 
 // }
-	
 
-// console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"])); //=> [5, 4, 2, 2, 4]
+// getMultipleLengths(["hello", "what", "is", "up", "dude"]); //=> [5, 4, 2, 2, 4]
 
 
-//G. maxOfThree ----------------------------------------
+//G. maxOfThree
 //Define a function maxOfThree that takes three numbers as arguments 
 //and returns the largest of them. If all numbers are the same, it 
 //doesn't matter which one is returned. If the two largest numbers 
 //are the same, one of them should be returned. Be sure to test it 
 //with larger values in each of the three locations.
 
-// function getMaxOfThree(numArray) {
-// 	return Math.max.apply(null, numArray);
+// const getMaxOfThree = (numArray) => {
+// 	const arrayNumbers = numArray.length
+// 	for(let i = 0; i < arrayNumbers; i++)
+// 	console.log(Math.max.apply(null, numArray));
 // }
-// console.log(getMaxOfThree(6, 9, 1));
-
-
-// const maxOfThree = (highestNumber) => {
-// 	for (i= 0; i < maxOfThree.length; i++){
-// 		if (i[0].length > i[1].length){
-// 		} else if (i)
-// 		function Math.max(highestNumber)
-// 	}
-// }
-
-// console.log(maxOfThree(6, 9, 1)); //9
+// getMaxOfThree([6, 9, 1]);
 
 //H. printLongestWord---------------------------------------
 //Write a function printLongestWord that accepts a single argument, 
 //an array of strings. The method should return the longest word in
 // the array. In case of a tie, the method should return the word 
 //that appears first in the array.
+// ideas from https://stackoverflow.com/questions/51178129/find-the-longest-word-in-an-array-javascript
 
-// function printLongestWord(strings) {
+function printLongestWord (string) {
+	let word = "";
+	for(let i = 0; i < string.length; i++){
+		if (word.length < word[i].length) {
+			word = string[i];
+		}
+	}
+	return word;
+}
 
-// 	return Math.max(strings);
-// }
+function longestStringReduce(arr) {
+	return word.reduce((a,b) => a.length < b.length ? b : a, "");
+}
 
+console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
 
-// console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
-
-// //=> "Peanutbutter"
+//=> "Peanutbutter"
 
 //I. transmogrify ---------------------------------------
 
@@ -794,37 +790,37 @@ console.log(user.friend["purchased"][1]);
 
 
 
-//G. FUNCTIONS CAN OPERATE ON OBJECTS
+// //G. FUNCTIONS CAN OPERATE ON OBJECTS
 
-// 1. Write a single function updateUser that takes no parameters. When the function is run, it should:------------------------
-// -increment the user's age by 1
-// -make the user's name uppercase
-var updateUser = () {
-	for(let i = 0; i < user.length; i++){
-		user.age++;
-		user["name"].upperCase;
-	} 
-}
-console.log(user["age"]);
-console.log(user["name"]);
+// // 1. Write a single function updateUser that takes no parameters. When the function is run, it should:------------------------
+// // -increment the user's age by 1
+// // -make the user's name uppercase
+// var updateUser = () {
+// 	for(let i = 0; i < user.length; i++){
+// 		user.age++;
+// 		user["name"].upperCase;
+// 	} 
+// }
+// console.log(user["age"]);
+// console.log(user["name"]);
 
 
-// The function does not need a return statement, it will merely modify the user object.
+// // The function does not need a return statement, it will merely modify the user object.
 
-// 2. Write a function oldAndLoud that performs the exact same tasks as updateUser, but instead of 
-//hard-coding it to only work on our user object, make it take a parameter person, and have it modify 
-//the object that is passed in as an argument when the function is called. Call your oldAndLoud function 
-//with user as the argument.
+// // 2. Write a function oldAndLoud that performs the exact same tasks as updateUser, but instead of 
+// //hard-coding it to only work on our user object, make it take a parameter person, and have it modify 
+// //the object that is passed in as an argument when the function is called. Call your oldAndLoud function 
+// //with user as the argument.
 
-const oldAndLoud = () {
-let anotherPerson
-	for(let i = 0; i < anotherPerson; i++){
-		user.age++;
-		user["name"].upperCase;
-	}
-	return oldAndLoud
-}
-console.log(anotherPerson(name: "Laura", age: 18, location: "Davis", purchased: "car" ))
+// const oldAndLoud = () {
+// let anotherPerson
+// 	for(let i = 0; i < anotherPerson; i++){
+// 		user.age++;
+// 		user["name"].upperCase;
+// 	}
+// 	return oldAndLoud
+// }
+// console.log(anotherPerson(name: "Laura", age: 18, location: "Davis", purchased: "car" ))
 
 
 
